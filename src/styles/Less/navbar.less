@@ -1,10 +1,40 @@
+@import "Colors.less";
+@import "MediaQuery.less";
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.total-nav {
+  background: @background-navbar;
+  color: @font-default;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(8, 4, 44);
+  .logo {
+    width: 10%;
+    @media @phone {
+      width: 40%;
+    }
+    img {
+      width: 70%;
+    }
+  }
+  menu {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    li {
+      padding: 0 2%;
+      &:hover {
+        cursor: pointer;
+        color: @hover-default;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
 }
