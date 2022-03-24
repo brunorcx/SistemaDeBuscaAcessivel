@@ -1,0 +1,9 @@
+.product-container {
+  display: flex;
+}
+.product-container .sidebar {
+  width: 20%;
+}
+.product-container .productList {
+  width: 80%;
+}
