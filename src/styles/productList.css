@@ -1,0 +1,22 @@
+.productList ul {
+  list-style: none;
+  padding: 0;
+  margin-left: -5%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media only screen and (min-width: 320px) and (max-width: 530px) {
+  .productList ul {
+    grid-template-columns: 50% 50%;
+    margin-left: -4%;
+  }
+}
+.productList ul li {
+  margin-bottom: 5%;
+  margin-right: 5%;
+  border: 1px dotted rgba(136, 150, 157, 0.5);
+}
+.productList ul li img {
+  object-fit: cover;
+  width: 160px;
+}

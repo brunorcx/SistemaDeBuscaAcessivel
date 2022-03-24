@@ -1,0 +1,24 @@
+@import "Colors.less";
+@import "MediaQuery.less";
+.productList {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -5%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    @media @phone {
+      grid-template-columns: 50% 50%;
+      margin-left: -4%;
+    }
+    li {
+      margin-bottom: 5%;
+      margin-right: 5%;
+      border: 1px dotted @background-navbar;
+      img {
+        object-fit: cover;
+        width: 160px;
+      }
+    }
+  }
+}
