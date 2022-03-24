@@ -10,7 +10,7 @@ const Sidebar = () => {
       //A linha acima funciona e é equivalente a de baixo
       setCategoriesLi((categoriesLi) => [
         ...categoriesLi,
-        <li>
+        <li key={category}>
           <input type="checkbox"></input>
           <p>{category}</p>
         </li>,

@@ -9,7 +9,7 @@ const ProductList = () => {
     for (const product of products) {
       setProductsLi((productsLi) => [
         ...productsLi,
-        <li>
+        <li key={product}>
           <img src="/Arroz.jpg" alt="Arroz"></img>
           <p>{product}</p>
           <p>Preço: R$6</p>

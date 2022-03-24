@@ -1,7 +1,9 @@
+.productList {
+  margin-left: 1%;
+}
 .productList ul {
   list-style: none;
   padding: 0;
-  margin-left: -5%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }

@@ -1,9 +1,4 @@
 .product-container {
-  display: flex;
-}
-.product-container .sidebar {
-  width: 20%;
-}
-.product-container .productList {
-  width: 80%;
+  display: grid;
+  grid-template-columns: 12% 88%;
 }
