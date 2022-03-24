@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/sidebar.css";
 
 const Sidebar = () => {
-  const [categories, setCategories] = useState(["A", "B", "C", "D"]);
+  const [categories, setCategories] = useState(["Arroz", "B", "C", "D"]);
   const [categoriesLi, setCategoriesLi] = useState([]);
   function getCategories(categories) {
     for (const category of categories) {
