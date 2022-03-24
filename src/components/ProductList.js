@@ -2,7 +2,7 @@ import "../styles/productList.css";
 import { useState, useEffect } from "react";
 
 const ProductList = () => {
-  const [products, setProducts] = useState(["Arroz", "Carne", "Ovos", "Frango"]);
+  const [products, setProducts] = useState(["Arroz", "Carne", "Ovos", "Frango", "Batata"]);
   const [productsLi, setProductsLi] = useState([]);
 
   function getProducts(products) {
@@ -13,6 +13,7 @@ const ProductList = () => {
           <img src="/Arroz.jpg" alt="Arroz"></img>
           <p>{product}</p>
           <p>Preço: R$6</p>
+          <p>Supermercado</p>
           <p>Data: 24/03/2022</p>
         </li>,
       ]);
@@ -22,7 +23,7 @@ const ProductList = () => {
     getProducts(products);
   }, [products]);
   return (
-    <main>
+    <main className="productList">
       <ul>{productsLi}</ul>
     </main>
   );
