@@ -3,9 +3,19 @@
 
 .product-container {
   display: grid;
+  overflow-x: hidden;
   grid-template-columns: 12% 88%;
 
   @media @phone {
-    grid-template-columns: 100%;
+    grid-template-columns: 0 100%;
+    .sidebar {
+      // display: block;
+      transform: translateX(50vw);
+      transition: 1s;
+    }
+    .openSidebar {
+      transform: translateX(-30vw);
+      transition: 1s;
+    }
   }
 }
