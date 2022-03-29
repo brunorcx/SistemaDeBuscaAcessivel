@@ -1,14 +1,21 @@
+.productList {
+  margin-left: 1%;
+}
 .productList ul {
   list-style: none;
   padding: 0;
-  margin-left: -5%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
-@media only screen and (min-width: 320px) and (max-width: 530px) {
+@media only screen and (min-width: 320px) and (max-width: 601px) {
   .productList ul {
     grid-template-columns: 50% 50%;
-    margin-left: -4%;
+    margin-left: 2%;
+  }
+}
+@media only screen and (min-width: 602px) and (max-width: 959px) {
+  .productList ul {
+    grid-template-columns: 33.33% 33.33% 33.33%;
   }
 }
 .productList ul li {

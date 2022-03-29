@@ -1,15 +1,19 @@
 @import "Colors.less";
 @import "MediaQuery.less";
 .productList {
+  margin-left: 1%;
   ul {
     list-style: none;
     padding: 0;
-    margin-left: -5%;
+    // margin-left: -5%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     @media @phone {
       grid-template-columns: 50% 50%;
-      margin-left: -4%;
+      margin-left: 2%;
+    }
+    @media @tablet {
+      grid-template-columns: 33.33% 33.33% 33.33%;
     }
     li {
       margin-bottom: 5%;

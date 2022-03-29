@@ -9,7 +9,7 @@
 .total-nav .logo {
   width: 10%;
 }
-@media only screen and (min-width: 320px) and (max-width: 530px) {
+@media only screen and (min-width: 320px) and (max-width: 601px) {
   .total-nav .logo {
     width: 40%;
   }
@@ -25,6 +25,14 @@
   justify-content: center;
   padding-right: 10%;
 }
+.total-nav menu .HamburgerMenu {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+  .total-nav menu .HamburgerMenu {
+    display: block;
+  }
+}
 .total-nav menu li {
   padding: 0 2%;
 }
@@ -35,4 +43,15 @@
 .total-nav menu li a {
   color: inherit;
   text-decoration: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+  .total-nav menu li {
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+  .total-nav menu {
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
 }
