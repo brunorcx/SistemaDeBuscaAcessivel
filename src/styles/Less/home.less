@@ -1,0 +1,29 @@
+@import "Colors.less";
+@import "MediaQuery.less";
+.suggested {
+  margin-left: 1%;
+  ul {
+    list-style: none;
+    padding: 0;
+    // margin-left: -5%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    @media @phone {
+      grid-template-columns: 50% 50%;
+      margin-left: 2%;
+    }
+    @media @tablet {
+      grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    li {
+      margin-bottom: 5%;
+      margin-right: 5%;
+      // border: 1px dotted @background-navbar;
+      border-radius: 2%;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
