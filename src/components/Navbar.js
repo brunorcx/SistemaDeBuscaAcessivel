@@ -2,7 +2,7 @@ import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-const Navbar = (props) => {
+const Navbar = ({ openSidebar, setOpenSidebar }) => {
   return (
     <header className="App-header">
       <nav className="total-nav">
@@ -10,7 +10,7 @@ const Navbar = (props) => {
           <img src="/Logo.png" alt="logo"></img>
         </div>
         <menu>
-          <div className="HamburgerMenu" onClick={() => props.setOpenSidebar(!props.openSidebar)}>
+          <div className="HamburgerMenu" onClick={() => setOpenSidebar(!openSidebar)}>
             <GiHamburgerMenu />
           </div>
           <li>
