@@ -1,4 +1,4 @@
-import "../styles/productList.css";
+import "styles/productList.css";
 import { useState, useEffect } from "react";
 
 const ProductList = () => {

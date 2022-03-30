@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles/products.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Sibebar from "../components/Sidebar";
-import ProductList from "../components/ProductList";
+import "styles/products.css";
+import Navbar from "components/Navbar";
+import Footer from "components/Footer";
+import Sibebar from "components/Sidebar";
+import ProductList from "components/ProductList";
 
 const Products = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
