@@ -2,6 +2,11 @@
 @import "MediaQuery.less";
 .suggested {
   margin-left: 1%;
+  h1 {
+    text-align: left;
+    color: @font-color;
+    margin-left: 2%;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -26,4 +31,7 @@
       }
     }
   }
+}
+.under10 {
+  .suggested();
 }

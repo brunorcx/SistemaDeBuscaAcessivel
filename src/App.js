@@ -1,4 +1,4 @@
-import "./styles/App.css";
+import "styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -23,3 +23,4 @@ const Routing = () => {
 };
 
 export default App;
+//https://www.supermercadogoiana.com.br/loja/

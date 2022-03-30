@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/sidebar.css";
+import "styles/sidebar.css";
 
 const Sidebar = () => {
   const [categories, setCategories] = useState(["Arroz", "B", "C", "D"]);
